@@ -9,12 +9,12 @@ public class TimKiemString {
         String url = "D:\\CTDLvaTT\\FindThe3rdLargestNumber\\src\\ThiLapTrinhSRV\\session1\\docfile.txt";
         FileInputStream fileInputStream =new FileInputStream(url);
         Scanner scanner = new Scanner(fileInputStream);
-        for (int tc = 1; tc <= 1; tc++) {
-            int t = scanner.nextInt();
+        int T= scanner.nextInt();
+        for (int tc = 1; tc <=T; tc++) {
             String s1 = scanner.next();
             String s2 = scanner.next();
             int res =0;
-            for (int i = 0; i <= s2.length()-s1.length(); i++) {
+            for (int i = 0; i < s2.length(); i++) {
                 if (s2.charAt(i)==s1.charAt(0)){
                     boolean isTrue =true;
                     for (int j = 1; j < s1.length(); j++) {
@@ -28,7 +28,7 @@ public class TimKiemString {
                     }
                 }
             }
-            System.out.print("#"+t+" "+res);
+            System.out.println("#" +tc+" "+res);
         }
     }
 }

@@ -49,3 +49,21 @@ public class QueueRooki {
         }
     }
 }
+//Arrays.sort(a1);
+//            int[] a3 = new int[n];
+//            for (int i = 0; i < n; i++) {
+//                int count = map.get(a1[i]);
+//                for (int j = 0; j < n; j++) {
+//                    if (count==0&&a3[j]==0){
+//                        a3[j]=a1[i];
+//                        break;
+//                    }
+//                    else if (a3[j]==0){
+//                        count--;
+//                    }
+//                }
+//            }
+//
+//            for (int i = 0; i < n; i++) {
+//                System.out.print(a3[i]+" ");
+//            }

@@ -6,17 +6,6 @@ import java.util.Scanner;
 
 public class LogoDoiXung_LogoSymmetry {
 
-//    public static  checkSymmetry(int[][] logoMatrix){
-//        int n = logoMatrix.length;
-//        for (int i = 0; i < n/2; i++) {
-//            for (int j = 0; j < n/2; j++) {
-//                if (logoMatrix[n-1-j][i] !=logoMatrix[j][i] ||logoMatrix[i][j] !=logoMatrix[i][n-1-j]){
-//                    return "NO";
-//                }
-//            }
-//        }
-//        return "YES";
-//    }
     public static void main(String[] args) throws FileNotFoundException {
         String url = "D:\\CTDLvaTT\\FindThe3rdLargestNumber\\src\\ThiLapTrinhSRV\\session1\\docfile.txt";
         FileInputStream fileInputStream= new FileInputStream(url);

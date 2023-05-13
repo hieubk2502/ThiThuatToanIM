@@ -41,7 +41,7 @@ public class TimDuongDINhanhNhat_ThuatToanDijkstra {
                 int dangXet =0;
                 int minDistance = oo;
                 for (int i = 0; i < n; i++) {
-                    if (visited.contains(i)==false&&distance[i]<minDistance){
+                    if (!visited.contains(i) &&distance[i]<minDistance){
                         minDistance =distance[i];
                         dangXet=i;
                     }
@@ -51,7 +51,7 @@ public class TimDuongDINhanhNhat_ThuatToanDijkstra {
                 // update kc va dinh truoc cua dinh do
                 for (int i = 0; i < n; i++) {
                     int findMin = oo;
-                    if (visited.contains(i)==false&&a[dangXet][i]!=0) {
+                    if (!visited.contains(i) &&a[dangXet][i]!=0) {
                         int newDistance = distance[dangXet]+a[dangXet][i];
                         distance[i]=newDistance;
                         if (distance[i]<findMin){
